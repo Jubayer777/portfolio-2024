@@ -1,0 +1,155 @@
+@import "../../../assets/styles/index.scss";
+.project-card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $sidebar-bg;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    @include media-max(375px) {
+        height: 350px;
+    }
+    $card: &;
+    &:hover {
+        #{$card}__normal-content {
+            display: none;
+        }
+        #{$card}__hover-content {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    &__normal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &__hover-content {
+        display: none;
+        width: 100%;
+    }
+    &__title {
+        font-family: $font-family-inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 123.6%;
+        text-transform: capitalize;
+        color: $theme-bg;
+        margin-bottom: 19px;
+        margin-top: 30px;
+        @include media-max(768px) {
+            font-size: 20px;
+        }
+    }
+    &__time {
+        font-family: $font-family-inter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: normal;
+        text-transform: capitalize;
+        color: $color-off-orange;
+        margin-bottom: 8px;
+        @include media-max(375px) {
+            font-size: 12px;
+        }
+    }
+    &__description {
+        font-family: $font-family-inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        font-feature-settings: "calt" off, "kern" off;
+        color: $color-white;
+        margin-left: 31px;
+        margin-right: 31px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        @include media-max(375px) {
+            font-size: 12px;
+        }
+    }
+    &__img {
+        height: 30vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    &__content {
+        width: 90%;
+        &__item {
+            display: flex;
+            align-items: center;
+        }
+        &__line {
+            opacity: 45%;
+            height: 0px;
+            border: 0.5px solid $text-white;
+        }
+        &__icon {
+            width: 18px;
+            height: 18px;
+            color: $theme-bg;
+        }
+        &__text {
+            font-family: $font-family-cormorant-garamond;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            text-transform: capitalize;
+            font-feature-settings: "calt" off, "kern" off;
+            color: $text-white;
+            margin-left: 18.63px;
+            @include media-max(375px) {
+                font-size: 12px;
+            }
+        }
+    }
+    &__button-div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 20px; 
+        margin-top: 20px;
+    }
+    &__button {
+        border: none;
+        font-family: $font-family-roboto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: $body-bg;
+        cursor: pointer;
+        background: $color-white;
+        box-shadow: 0px 1px 10px $box-shadow-left-bar;
+        border-radius: 30px;
+        width: 40%;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        &--active {
+            background: $theme-bg;
+        }
+    }
+}

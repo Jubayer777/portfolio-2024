@@ -1,0 +1,50 @@
+@import "../../../assets/styles/index.scss";
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__tab{
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        gap:30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        &__item{
+            font-family: $font-family-roboto;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 123.6%;
+            text-transform: capitalize;
+            color: $text-white;
+            text-align: center;
+            cursor: pointer;
+            @include media-max(768px) {
+                font-size: 14px;
+            }
+            &:hover{
+                color: $theme-bg;
+            }
+            &--active{
+                color: $theme-bg;
+            }
+        }
+    }
+    &__card-container{
+        width: fit-content;
+        display: grid;
+        margin-top: 40px;
+        height: fit-content;
+        grid-template-columns: repeat(5,1fr);
+        gap: 1.875rem;
+        @include media-max(768px) {
+            grid-template-columns: repeat(4,1fr);
+        }
+        @include media-max(375px) {
+            grid-template-columns: repeat(2,1fr);
+        }
+      }
+}
+

@@ -1,0 +1,62 @@
+@import "../../../assets/styles/index.scss";
+.service-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $sidebar-bg;
+  padding: 30px;
+  &__icon {
+    width: 65.88px;
+    height: 65.88px;
+    margin-bottom: 33.44px;
+    object-fit: cover;
+  }
+  &__title {
+    font-family: $font-family-inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: $text-white;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  &__description {
+    font-family: $font-family-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    font-feature-settings: "calt" off, "kern" off;
+    color: $light-gray-bg;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+    font-family: $font-family-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $theme-bg;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &__arrow{
+        font-size: 20px;
+    }
+  }
+}

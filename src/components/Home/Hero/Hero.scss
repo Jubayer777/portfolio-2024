@@ -1,0 +1,124 @@
+@import "../../../assets/styles/index.scss";
+.hero-section {
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(
+            to left,
+            rgba(26, 24, 24, 0) 0%,
+            rgba(24, 22, 26, 0.952) 100%
+        ),
+        url("../../../assets/images/profile-bg.jpg");
+
+    position: relative;
+    object-fit: cover;
+    background-size: 100% 100%;
+    box-shadow: $box-shadow-hero;
+
+    &__profile-img {
+        height: 90%;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        @include media-max(768px) {
+            height: 70%;
+        }
+        @include media-max(375px) {
+            height: 40%;
+        }
+    }
+    &__profile-info {
+        width: calc(100% - 400px);
+        margin-left: 60px;
+        padding-top: 93px;
+        @include media-max(768px) {
+            width: calc(100% - 250px);
+        }
+        @include media-max(375px) {
+            width: 100%;
+            margin-left: 30px;
+            padding-top: 50px;
+        }
+    }
+    &__profile-title {
+        font-family: $font-family-inter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 123.6%;
+        color: $color-white;
+        @include media-max(768px) {
+            font-size: 28px;
+        }
+        @include media-max(375px) {
+            font-size: 14px;
+        }
+        &--highlight {
+            color: $theme-bg;
+            font-family: $font-family-cormorant-garamond;
+        }
+    }
+    &__profile-description {
+        width: calc(100% - 100px);
+        font-family: $font-family-roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        font-feature-settings: "calt" off, "kern" off;
+        color: $light-gray-bg;
+        margin-top: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        @include media-max(375px) {
+            font-size: 14px;
+        }
+    }
+    &__hire-btn {
+        width: 210px;
+        height: 51px;
+        background: $theme-bg;
+        border-radius: 5px;
+        border: none;
+        font-family: $font-family-inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        text-decoration: none;
+        @include media-max(768px) {
+            font-size: 14px;
+            width: 180px;
+            height: 41px;
+        }
+        @include media-max(375px) {
+            font-size: 12px;
+            width: 145px;
+            height: 35px;
+        }
+        &__icon {
+            font-size: 18px;
+            margin-left: 11.67px;
+            color: $color-white;
+            @include media-max(768px) {
+                font-size: 16px;
+            }
+            @include media-max(375px) {
+                margin-left: 8px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
