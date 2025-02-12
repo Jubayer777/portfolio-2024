@@ -1,7 +1,6 @@
 import React from "react";
 import "./project-card.scss";
 import { AiOutlineCheck } from "react-icons/ai";
-import { RxCross2 } from "react-icons/rx";
 
 const ProjectCard = ({ projectData }) => {
     return (

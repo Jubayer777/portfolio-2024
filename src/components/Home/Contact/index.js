@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "./contact.scss";
-import { MdLocationPin, MdEmail, MdPhoneInTalk } from "react-icons/md";
 import { RiSendPlaneFill } from "react-icons/ri";
 import GoogleMap from "../GoogleMap";
 import emailjs from "@emailjs/browser";

@@ -1,6 +1,5 @@
 import React from "react";
 import "./service-card.scss";
-import { BiChevronRight } from "react-icons/bi";
 
 const ServiceCard = ({ service }) => {
     return (
