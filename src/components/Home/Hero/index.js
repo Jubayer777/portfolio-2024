@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.scss";
-import profileImg from "../../../assets/images/profile.png";
+import profileImg from "../../../assets/images/profile4.png";
 import { BiDownload } from "react-icons/bi";
 import Typewriter from "typewriter-effect";
 import pdf from "../../../assets/pdf/jubayer_al_alam_resume.pdf";

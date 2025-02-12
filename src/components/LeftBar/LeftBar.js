@@ -1,6 +1,6 @@
 import React from "react";
 import "./LeftBar.scss";
-import Profile from "../../assets/images/profile.jpg";
+import Profile from "../../assets/images/profile3.jpeg";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineBlock } from "react-icons/ai";
 import { languageData } from "./data/languageData";
