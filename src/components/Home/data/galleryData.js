@@ -1,3 +1,10 @@
+import gallery1 from "../../../assets/images/gallery/FB_IMG_1688111657460.jpg";
+import gallery2 from "../../../assets/images/gallery/IMG20230212090358.jpg";
+import gallery3 from "../../../assets/images/gallery/IMG_4770.jpg";
+import gallery4 from "../../../assets/images/gallery/IMG_4780.jpg";
+import gallery5 from "../../../assets/images/gallery/IMG20230715161402.jpg";
+import gallery6 from "../../../assets/images/gallery/IMG20230715160429.jpg";
+import gallery7 from "../../../assets/images/gallery/IMG_20240127_100306.jpg";
 export const galleryData = () => {
     return {
         description:
@@ -5,39 +12,45 @@ export const galleryData = () => {
         items: [
             {
                 id: 1,
-                src: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                src: gallery1,
                 alt: "Image 1",
-                title: "Lamborghini Huracan Performante",
+                title: "First Day At BJIT",
             },
             {
                 id: 2,
-                src: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
-                alt: "Image 2 ",
-                title: "Porsche 911 Turbo S",
+                src: gallery2,
+                alt: "Image 2",
+                title: "BJIT Picnic 2023",
             },
             {
                 id: 3,
-                src: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                src: gallery3,
                 alt: "Image 3",
-                title: "Ford Mustang",
+                title: "BJIT Picnic 2023",
             },
             {
                 id: 4,
-                src: "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=452&q=80",
+                src: gallery4,
                 alt: "Image 4",
-                title: "Lamborghini Aventador SV",
+                title: "BJIT Picnic 2023",
             },
             {
                 id: 5,
-                src: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+                src: gallery5,
                 alt: "Image 5",
-                title: "Ferrari 458 Speciale",
+                title: "BJIT AGM 2023",
             },
             {
                 id: 6,
-                src: "https://images.unsplash.com/photo-1471479917193-f00955256257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80",
+                src: gallery6,
                 alt: "Image 6",
-                title: "Porsche 911",
+                title: "BJIT AGM 2023",
+            },
+            {
+                id: 7,
+                src: gallery7,
+                alt: "Image 6",
+                title: "BJIT Picnic 2024",
             },
         ],
     };

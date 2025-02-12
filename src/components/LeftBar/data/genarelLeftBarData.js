@@ -12,7 +12,7 @@ export const generalData = () => {
             },
             {
                 label: "Residence",
-                value: "Bangladesh",
+                value: "Australia",
             },
             {
                 label: "Freelance",
@@ -21,7 +21,7 @@ export const generalData = () => {
             },
             {
                 label: "Address",
-                value: "Dhaka, Bangladesh",
+                value: "Sydney, Australia",
             },
         ],
     };

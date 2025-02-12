@@ -6,7 +6,7 @@ export const contactData = () => {
         items: [
             {
                 label: "Location",
-                value: "Notunbazar,Gulshan,Dhaka,Bangladesh",
+                value: "Punchbowl, Sydney, Australia",
                 icon: <MdLocationPin />,
             },
             {
@@ -16,7 +16,7 @@ export const contactData = () => {
             },
             {
                 label: "Cell",
-                value: "+8801604118323",
+                value: "+610416928427",
                 icon: <MdPhoneInTalk />,
             },
         ],
