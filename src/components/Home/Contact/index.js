@@ -13,7 +13,6 @@ const Contact = () => {
     const [inputData, setInputData] = useState({
         name: "",
         email: "",
-        subject: "",
         message: "",
     });
     const handleChange = (e) => {
@@ -41,9 +40,6 @@ const Contact = () => {
                 errors.email = "Invalid email address";
             }
         }
-        if (!values.subject) {
-            errors.subject = "Subject is a required field";
-        }
         if (!values.message) {
             errors.message = "Message is a required field";
         }
@@ -60,10 +56,10 @@ const Contact = () => {
         if (isNonEmpty && Object.keys(newErrors).length === 0) {
             emailjs
                 .sendForm(
-                    "service_zqeruoy",
-                    "template_vd0dhy9",
+                    process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                     form.current,
-                    "user_WoPM157PmNm5aE4Zzm6Lc"
+                    process.env.REACT_APP_EMAILJS_PUBLIC_KEY
                 )
                 .then(
                     (result) => {
@@ -86,6 +82,11 @@ const Contact = () => {
                             },
                         }).then((result) => {
                             if (result.dismiss === Swal.DismissReason.timer) {
+                                setInputData({
+                                    name: "",
+                                    email: "",
+                                    message: "",
+                                })
                                 console.log("I was closed by the timer");
                             }
                         });
@@ -129,6 +130,7 @@ const Contact = () => {
                     name="name"
                     className="contact-section__right__input"
                     placeholder="Name"
+                    value={inputData.name}
                     onChange={handleChange}
                 />
                 {
@@ -139,26 +141,18 @@ const Contact = () => {
                     name="email"
                     className="contact-section__right__input"
                     placeholder="Email"
+                    value={inputData.email}
                     onChange={handleChange}
                 />
                 {
                     formErrors.email && <p className="contact-section__right__error">{formErrors.email}</p>
-                }
-                <input
-                    type="text"
-                    name="subject"
-                    className="contact-section__right__input"
-                    placeholder="Subject"
-                    onChange={handleChange}
-                />
-                {
-                    formErrors.subject&& <p className="contact-section__right__error">{formErrors.subject}</p>
                 }
                 <textarea
                     type="text"
                     name="message"
                     className="contact-section__right__input contact-section__right__input--area"
                     placeholder="Message"
+                    value={inputData.message}
                     onChange={handleChange}
                 />
                 {
