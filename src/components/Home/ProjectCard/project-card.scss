@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    @include media-max(375px) {
+    @include media-max(660px) {
         height: 350px;
     }
     $card: &;
@@ -48,7 +48,7 @@
         color: $theme-bg;
         margin-bottom: 19px;
         margin-top: 30px;
-        @include media-max(768px) {
+        @include media-max(1024px) {
             font-size: 20px;
         }
     }
@@ -61,7 +61,7 @@
         text-transform: capitalize;
         color: $color-off-orange;
         margin-bottom: 8px;
-        @include media-max(375px) {
+        @include media-max(660px) {
             font-size: 12px;
         }
     }
@@ -83,7 +83,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
-        @include media-max(375px) {
+        @include media-max(660px) {
             font-size: 12px;
         }
     }
@@ -118,7 +118,7 @@
             font-feature-settings: "calt" off, "kern" off;
             color: $text-white;
             margin-left: 18.63px;
-            @include media-max(375px) {
+            @include media-max(660px) {
                 font-size: 12px;
             }
         }

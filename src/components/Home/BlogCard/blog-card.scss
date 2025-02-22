@@ -10,7 +10,7 @@
     text-decoration: none;
     transition: 0.5s ease-in-out;
     border-radius: 8px;
-    @include media-max(768px) {
+    @include media-max(1024px) {
         padding: 15px;
     }
     &:hover{
@@ -34,7 +34,7 @@
         color: $text-white;
         margin-bottom: 15px;
         text-align: center;
-        @include media-max(375px) {
+        @include media-max(660px) {
             font-size: 14px;
         }
       }
@@ -54,7 +54,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
-        @include media-max(375px) {
+        @include media-max(660px) {
             font-size: 12px;
         }
       }

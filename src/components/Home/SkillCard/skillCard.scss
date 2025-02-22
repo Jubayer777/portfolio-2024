@@ -11,7 +11,7 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
     $card: &;
-    @include media-max(768px) {
+    @include media-max(1024px) {
         width: 100px;
         height: 100px;
     }
@@ -43,7 +43,7 @@
         text-transform: capitalize;
         color: $text-white;
         margin-top: 10px;
-        @include media-max(768px) {
+        @include media-max(1024px) {
             font-size: 14px;
         }
     }

@@ -10,8 +10,8 @@ const Carousel = () => {
         infinite: true,
         speed: 500,
         slidesToShow:
-            screenSize.width > 375
-                ? screenSize.width > 768
+            screenSize.width > 660
+                ? screenSize.width > 1024
                     ? screenSize.width > 1280
                         ? 4
                         : 3

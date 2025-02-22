@@ -6,7 +6,7 @@
     height: fit-content;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.875rem;
-    @include media-max(375px) {
+    @include media-max(660px) {
         grid-template-columns: 1fr;
         gap: 0px;
         margin-top: 20px;
@@ -59,7 +59,7 @@
         padding-left: 40px;
         position: relative;
         margin-bottom: 42px;
-        @include media-max(375px) {
+        @include media-max(660px) {
             margin-bottom: 30px;
         }
         &::before {

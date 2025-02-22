@@ -4,10 +4,10 @@
   background-color: $sidebar-bg;
   padding-bottom: 25px;
   width: 305px;
-  @include media-max(768px) {
+  @include media-max(1024px) {
     width: 250px;
   }
-  @include media-max(375px) {
+  @include media-max(660px) {
     width: 200px;
   }
   &__profile-section {
@@ -18,10 +18,10 @@
     height: fit-content;
     margin-bottom: 20px;
     height: 235px;
-    @include media-max(768px) {
+    @include media-max(1024px) {
       width: 250px;
     }
-    @include media-max(375px) {
+    @include media-max(660px) {
       width: 200px;
       height: 190px;
     }
@@ -33,11 +33,11 @@
     border-radius: 50%;
     margin-top: 30px;
     margin-bottom: 10px;
-    @include media-max(768px) {
+    @include media-max(1024px) {
       width: 80px;
       height: 80px;
     }
-    @include media-max(375px) {
+    @include media-max(660px) {
       width: 60px;
       height: 60px;
     }
@@ -52,11 +52,11 @@
     border-radius: 50%;
     background: $color-light-green;
     box-shadow: 0px 4px 10px $box-shadow-left-bar;
-    @include media-max(768px) {
+    @include media-max(1024px) {
       left: 153px;
       top: 80px;
     }
-    @include media-max(375px) {
+    @include media-max(660px) {
       left: 122px;
       top: 65px;
       width: 12px;
@@ -72,7 +72,7 @@
     line-height: 123.6%;
     text-transform: capitalize;
     color: $color-white;
-    @include media-max(375px) {
+    @include media-max(660px) {
       font-size: 14px;
     }
   }
@@ -87,7 +87,7 @@
     font-feature-settings: "calt" off, "kern" off;
     color: $light-gray-bg;
     margin-bottom: 15px;
-    @include media-max(375px) {
+    @include media-max(660px) {
       font-size: 12px;
     }
   }
@@ -95,11 +95,11 @@
   &__social {
     display: flex;
     gap: 15px;
-    @include media-max(768px) {
+    @include media-max(1024px) {
       display: flex;
       gap: 12px;
     }
-    @include media-max(375px) {
+    @include media-max(660px) {
       display: flex;
       gap: 8px;
     }
@@ -113,7 +113,7 @@
       background: $theme-bg;
       color: $color-white;
       font-size: 14px;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 12px;
         width: 20px;
         height: 20px;
@@ -153,7 +153,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 13px;
       }
     }
@@ -170,7 +170,7 @@
       &--green {
         color: $color-light-green;
       }
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 13px;
       }
     }
@@ -184,7 +184,7 @@
       font-weight: 500;
       font-size: 18px;
       color: $text-white;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 16px;
       }
     }
@@ -197,7 +197,7 @@
     font-size: 15px;
     font-family: $font-family-inter;
     margin-top: 15px;
-    @include media-max(375px) {
+    @include media-max(660px) {
       font-size: 13px;
     }
   }
@@ -223,7 +223,7 @@
       font-size: 18px;
       color: $text-white;
       margin-bottom: 15px;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 16px;
       }
     }
@@ -247,7 +247,7 @@
       font-size: 15px;
       color: $text-white;
       margin-left: 12px;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 12px;
       }
     }
@@ -261,7 +261,7 @@
     margin: 20px 45px 0px 40px;
     cursor: pointer;
     text-decoration: none;
-    @include media-max(375px) {
+    @include media-max(660px) {
       height: 32px;
     }
     &__text {
@@ -272,14 +272,14 @@
       line-height: 17px;
       color: $color-white;
       margin-right: 10px;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 12px;
       }
     }
     &__icon {
       color: $color-white;
       font-size: 24px;
-      @include media-max(375px) {
+      @include media-max(660px) {
         font-size: 16px;
       }
     }
@@ -292,7 +292,7 @@
       width: calc(100% - 20px);
       margin-left: auto;
       padding-right: 20px;
-      @include media-max(375px) {
+      @include media-max(660px) {
         height: calc(100vh - 295px);
       }
       &::-webkit-scrollbar {

@@ -4,10 +4,10 @@
     margin-bottom: 30px;
     width: 750px;
     margin-top: 40px;
-    @include media-max(768px) {
+    @include media-max(1024px) {
       width: 600px;
     }
-    @include media-max(375px) {
+    @include media-max(660px) {
         width: 240px;
     }
     &__image-div {
@@ -30,7 +30,7 @@
             object-fit: cover;
             width: 80%;
             border-radius: 5px;
-            @include media-max(375px) {
+            @include media-max(660px) {
                 width: 100%;
             }
         }
@@ -54,7 +54,7 @@
             padding-top: 5px;
             padding-bottom: 5px;
             display: none;
-            @include media-max(375px) {
+            @include media-max(660px) {
                 width: 100%;
                 left: 0;
             }

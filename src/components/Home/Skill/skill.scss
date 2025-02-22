@@ -21,7 +21,7 @@
             color: $text-white;
             text-align: center;
             cursor: pointer;
-            @include media-max(768px) {
+            @include media-max(1024px) {
                 font-size: 14px;
             }
             &:hover{
@@ -39,10 +39,10 @@
         height: fit-content;
         grid-template-columns: repeat(5,1fr);
         gap: 1.875rem;
-        @include media-max(768px) {
+        @include media-max(1024px) {
             grid-template-columns: repeat(4,1fr);
         }
-        @include media-max(375px) {
+        @include media-max(660px) {
             grid-template-columns: repeat(2,1fr);
         }
       }
