@@ -3,7 +3,7 @@ import "./Hero.scss";
 import profileImg from "../../../assets/images/profile4.png";
 import { BiDownload } from "react-icons/bi";
 import Typewriter from "typewriter-effect";
-import pdf from "../../../assets/pdf/jubayer_al_alam_resume.pdf";
+import pdf from "../../../assets/pdf/jubayer-al-alam_resume.pdf";
 import { heroData } from "../data/heroData";
 
 const HeroTop = () => {

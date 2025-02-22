@@ -2,11 +2,11 @@ export const experienceData = () => {
     return [
         {
             position: "Software Engineer",
-            year: "2021 - present",
+            year: "August 2021 - October 2024",
             organization: "BJIT Limited",
             address: "H-2275, 2279 Pachkhola, Dhaka 1212",
             description:
-                "It's been a great journey so far. It's an excellent university to learn and growing high ambitions. I am looking forward to be graduated very soon",
+                "During my time at BJIT Limited, I contributed to the design and development of innovative software solutions. Working alongside talented teams, I honed my skills in both frontend and backend development, delivering high-quality products on time. This role allowed me to take on increasing responsibilities and grow as a software engineer, and I am proud of the projects I completed with the team.",
         },
         {
             position: "Software Developer (Intern)",
@@ -14,7 +14,7 @@ export const experienceData = () => {
             organization: "Mistri Solutions",
             address: "44, 44 Indira Rd, Dhaka 1215",
             description:
-                "It's been a great journey so far. It's an excellent university to learn and growing high ambitions. I am looking forward to be graduated very soon",
+                "As an intern at Mistri Solutions, I had the opportunity to learn the fundamentals of software development in a real-world environment. I assisted with coding, testing, and debugging, gaining hands-on experience in a professional setting. This internship was an invaluable introduction to the industry, allowing me to apply the theoretical knowledge gained during my studies in a practical context.",
         },
     ];
 };

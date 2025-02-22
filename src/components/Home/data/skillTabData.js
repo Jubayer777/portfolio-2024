@@ -24,6 +24,7 @@ import {
     SiWebpack,
     SiJest,
     SiPhp,
+    SiTailwindcss
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 export const skillOptions = () => {
@@ -54,6 +55,13 @@ export const skillOptions = () => {
                     iconColor: "#C76494",
                 },
                 {
+                    title: "Tailwind",
+                    percentage: "90",
+                    icon: <SiTailwindcss size={50} />,
+                    storkColor: "#36B7F0",
+                    iconColor: "#36B7F0",
+                },
+                {
                     title: "Bootstrap",
                     percentage: "80",
                     icon: <SiBootstrap size={50} />,
@@ -79,7 +87,7 @@ export const skillOptions = () => {
                     title: "NextJS",
                     percentage: "90",
                     icon: <TbBrandNextjs size={60} />,
-                    storkColor: "orange",
+                    storkColor: "gray",
                     iconColor: "#fff",
                 },
             ],
@@ -99,7 +107,7 @@ export const skillOptions = () => {
                     title: "ExpressJS",
                     percentage: "90",
                     icon: <SiExpress size={50} />,
-                    storkColor: "orange",
+                    storkColor: "gray",
                     iconColor: "#fff",
                 },
                 {

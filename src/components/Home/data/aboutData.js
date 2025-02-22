@@ -18,26 +18,31 @@ export const aboutData = () => {
             },
             {
                 label: "City",
-                value: "Dhaka,Bangladesh",
+                value: "Sydney, Australia",
             },
             {
                 label: "Website",
-                value: "https://jubayer-portfolio.netlify.app",
+                value: "https://jubayer-al-alam.vercel.app/",
             },
             {
                 label: "Phone",
-                value: "+8801604118323",
+                value: "+61416928427",
             },
             {
                 label: "Email",
                 value: "jubayeralmahmud24@gmail.com",
             },
             {
-                label: "Company",
+                label: "Former Company",
                 value: "BJIT",
             },
+            {
+                label: "University",
+                value: "CQU",
+            },
+            
         ],
         description:
-            "Introducing Jubayer Al Alam: The Maestro Of Software Development At BJIT! With A Passion For Coding That Knows No Bounds, I Am Jubayer Al Alam, A Software Developer Renowned. At BJIT, I Wield My Skills With Finesse, Crafting Digital Solutions That Impress. From Frontend Design To Backend Complexity, I Embrace Challenges With Unwavering Tenacity. Join Me On This Journey As We Redefine What's Possible, And Together, We'll Create Software That's Truly Unstoppable.",
+            "<p><strong>Introducing Jubayer Al Alam: A Visionary in Software Development and IT!</strong></p><p>With a passion for coding that knows no bounds, I am Jubayer Al Alam, a software developer driven by innovation. With <strong>3.2 years of experience at BJIT Limited</strong>, I honed my skills in crafting seamless digital solutions. Now, as I pursue a <strong>Master of IT at CQU</strong>, I continue to embrace new challenges, refining my expertise in <strong>frontend and backend development</strong>. Join me on this journey as we push the limits of technology and create solutions that inspire! 🚀</p>",
     };
 };

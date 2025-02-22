@@ -40,7 +40,7 @@ const Resume = () => {
                             {education.institute}
                         </p>
                         <p className="resume-section__result">
-                            {education.result_name + " : " + education.result}
+                            {education?.ongoing?"Ongoing":education.result_name + " : " + education.result}
                         </p>
                         <p className="resume-section__description">
                             {education.description}
