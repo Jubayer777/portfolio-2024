@@ -21,7 +21,7 @@ export const generalData = () => {
             },
             {
                 label: "Address",
-                value: "Sydney, Australia",
+                value: "Sydney",
             },
         ],
     };
