@@ -17,15 +17,14 @@
     box-shadow: $box-shadow-hero;
 
     &__profile-img {
-        height: 90%;
+        height:140%;
         bottom: 0;
         right: 0;
         position: absolute;
-        @include media-max(1024px) {
-            height: 70%;
-        }
         @include media-max(660px) {
-            height: 40%;
+            height: 100%;
+            left:100px;
+            
         }
     }
     &__profile-info {
@@ -36,8 +35,8 @@
             width: calc(100% - 250px);
         }
         @include media-max(660px) {
-            width: 100%;
-            margin-left: 30px;
+            width: 70%;
+            margin-left: 10px;
             padding-top: 50px;
         }
     }
