@@ -1,7 +1,6 @@
 import React from "react";
 import { GrFacebookOption,GrLinkedinOption,GrDribbble} from "react-icons/gr";
-import { AiFillInstagram } from "react-icons/ai";
-import { BsTwitter,BsYoutube } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 export const socialLinksData = () => {
     return [
         { icon: <GrFacebookOption/>, link: "https://www.facebook.com/jubayer.allmhamud" },
